@@ -213,7 +213,7 @@ soc_info_t soc_info_table[] = {
 		.needs_smc_workaround_if_zero_word_at_addr = 0x40004,
 	},{
 		.soc_id       = 0x1681, /* Allwinner V3s */
-		.name         = "V3s",
+		.name         = "V3/V3s",
 		.scratch_addr = 0x1000,
 		.mmu_tt_addr  = 0x8000,
 		.thunk_addr   = 0xA200, .thunk_size = 0x200,

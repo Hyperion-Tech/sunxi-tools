@@ -526,6 +526,9 @@ void aw_fel_spiflash_info(feldev_handle *dev)
 	}
 
 	switch (buf[3]) {
+	case 0x68:
+		manufacturer = "Boya";
+		break;
 	case 0xEF:
 		manufacturer = "Winbond";
 		break;

@@ -244,14 +244,11 @@ soc_info_t soc_info_table[] = {
 		.name         = "V5",
 		.spl_addr     = 0x20000,
 		.scratch_addr = 0x21000,
+		.mmu_tt_addr  = 0x28000,
 		.thunk_addr   = 0x2A200, .thunk_size = 0x200,
 		.swap_buffers = v5_sram_swap_buffers,
 		.sid_base     = 0x03006000,
 		.sid_offset   = 0x200,
-		.rvbar_reg    = 0x09010040,
-		/* Check L.NOP in the OpenRISC reset vector */
-		.needs_smc_workaround_if_zero_word_at_addr = 0x100004,
-	},{
 	},{
 		.soc_id       = 0x1728, /* Allwinner H6 */
 		.name         = "H6",
